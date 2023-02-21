@@ -1,0 +1,4 @@
+ * Typescript does not go into production it gets convert into vanilla javascript. As TypeScript is nothing but
+   a wrapper for javascript.
+
+* 
