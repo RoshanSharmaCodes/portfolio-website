@@ -1,38 +1,47 @@
+body{
+  -webkit-user-select: none;
+  font-family: "Helvetica";
+}
+
 .App {
-  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.socialBounceMenu {
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  border-radius: 50%;
+  position: fixed;
+  display: none;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  top: 600px;
+  right: 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 500px) {
+  .socialBounceMenu {
+    display: flex;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+@font-face {
+  font-family: 'LaBelle';
+  src: url('../public/assets/fonts/LaBelleAurore.woff2') format('woff2');
 }
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('../public/assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../public/assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+

@@ -1,0 +1,33 @@
+.portfolioContainer{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+.portfolioMain{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 400px));
+    gap:30px;
+    justify-items:center;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInOnPageLoad;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInOnPageLoad {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolioMain{
+        margin-top: 90px;
+        margin-bottom: 20px;
+    }
+}

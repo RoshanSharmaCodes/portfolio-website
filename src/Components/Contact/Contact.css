@@ -1,0 +1,139 @@
+.contactContainer {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: #181818;
+}
+
+.contactMain {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactFormDiv {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  border: 3px solid #8a3ffc;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #242424;
+}
+
+.contactInputDiv {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.contactCheckboxDiv {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.contactInput {
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  padding: 0 10px;
+}
+
+.contactInput:focus {
+  outline: none;
+}
+
+.contactLabel {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.contactMessageBox {
+  width: 85%;
+  height: 150px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 15px;
+  border: 0px;
+  resize: none;
+}
+
+.contactMessageBox:focus {
+  outline: none;
+}
+
+.contactFormSubmitBtn {
+  width: 90%;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid white;
+  letter-spacing: 3px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #8a3ffc;
+  border-radius: 6px;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.contactFormSubmitBtn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8a3ffc;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.contactFormSubmitBtn:hover::before {
+  transform: scaleX(1);
+}
+
+.contactCheckbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  accent-color: #8a3ffc;
+}
+
+@media only screen and (max-width: 750px) {
+  .contactMain {
+    align-items: flex-start;
+  }
+  .contactCheckboxDiv {
+    padding: 0;
+    align-items: flex-start;
+  }
+  .contactCheckbox {
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+  .contactFormDiv {
+    margin-top: 80px;
+  }
+  .contactContainer {
+    height: 100vh;
+  }
+}
